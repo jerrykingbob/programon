@@ -7,7 +7,7 @@ package programon;
 
 /**
  *
- * @author User
+ * @author RotiCanai
  */
 public class Programon {
 
@@ -15,7 +15,7 @@ public class Programon {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
 }
