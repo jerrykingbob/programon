@@ -7,7 +7,7 @@ package programon;
 
 /**
  *
- * @author User
+ * @author RotiCanai
  */
 public class pokemon {
     private String name;
