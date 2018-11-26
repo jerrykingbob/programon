@@ -13,14 +13,11 @@ package programon;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import javax.swing.*;
 
 public class modeselect extends JFrame{ //Code for the mode selection window
     private JLabel question;
-    private JButton single;
-    private JButton multi;
+    private JButton single, multi;
     
     public modeselect(){
         super("Mode Selection");
@@ -40,7 +37,6 @@ public class modeselect extends JFrame{ //Code for the mode selection window
     
     private class handler implements ActionListener{ //Subclass (class in a class)
         public void actionPerformed(ActionEvent event){ //what to do when either button is pressed
-            String str ="";
             if(event.getSource()==single)
                 play.singleplayer();
             else if(event.getSource()==multi)
