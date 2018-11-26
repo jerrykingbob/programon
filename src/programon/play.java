@@ -42,8 +42,8 @@ public class play extends JFrame{ //Incomplete
         
         p1.setLocation(x1,y);
         p2.setLocation(x2,y);
-        p1.setSize(300,300);
-        p2.setSize(300,300);
+        p1.setSize(330,270);
+        p2.setSize(330,270);
         p1.setResizable(false);
         p2.setResizable(false);
         p1.setVisible(true);
