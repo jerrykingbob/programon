@@ -48,6 +48,7 @@ public class modeselect extends JFrame{
                 play.singleplayer();
             else if(event.getSource()==multi)
                 play.multiplayer();
+            dispose();
         }
     }
 }
