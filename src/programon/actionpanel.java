@@ -5,6 +5,7 @@
  */
 package programon;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -17,9 +18,10 @@ import javax.swing.*;
 public class actionpanel extends JFrame{
     private JButton fight, bag, pokemon, run, select;
     private JList list;
-    private int state;
+    private int state=0;
     
     public actionpanel(int player){
+        setLayout(new FlowLayout());
         state s = new state();
         if(player==1)
             setTitle("Player 1");
@@ -31,18 +33,23 @@ public class actionpanel extends JFrame{
         run = new JButton("RUN"); //run button will trigger a surrender, player automatically loses.
         select = new JButton("SELECT"); //used to select a different pokemon/items.
         JScrollPane scrollpane = new JScrollPane();
+        scrollpane.setPreferredSize(new Dimension(250, 150));
+        scrollpane.setAlignmentX(LEFT_ALIGNMENT);
         if(state==1)
             list = new JList(s.attack());
         else if(state==2)
             list = new JList(s.bag());
         else if(state==3)
             list = new JList(s.pokemon());
+        else
+            list = new JList(s.empty());
         scrollpane.setViewportView(list);
         
         add(fight);
         add(bag);
         add(pokemon);
         add(run);
+        add(scrollpane);
         add(list);
         add(select);
         
