@@ -14,8 +14,8 @@ public class Programon {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        modeselect game = new modeselect();
+    public static void main(String[] args) { //Opens a window to select game mode
+        modeselect game = new modeselect(); //refers to modeselect class
         game.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         game.setSize(300,100);
         game.setResizable(false);
