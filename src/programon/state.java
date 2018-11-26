@@ -33,4 +33,8 @@ public class state extends play{
     public String[] attack(){
         return moves;
     }
+    public String[] empty(){
+        String[] a = new String[]{""};
+        return a;
+    }
 }
