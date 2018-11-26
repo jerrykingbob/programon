@@ -9,7 +9,7 @@ package programon;
  *
  * @author RotiCanai
  */
-public class pokemon {
+public class pokemon { //Only a template. Can be edited to fit with the algoritm
     private String name;
     private String type;
     private int level;

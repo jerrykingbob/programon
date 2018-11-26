@@ -29,8 +29,8 @@ public class modeselect extends JFrame{ //Code for the mode selection window
         question = new JLabel("Which mode would you like to play in?");
         single = new JButton("Single Player");
         multi = new JButton("Multiplayer");
-        add(question);
-        add(single);
+        add(question); //adds the text into the window
+        add(single); //adds the buttons into the window
         add(multi);
         
         handler action = new handler(); //refers to the handler subclass

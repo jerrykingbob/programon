@@ -14,12 +14,13 @@ public class Programon {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) { //Opens a window to select game mode
+    public static void main(String[] args) { //A window to select game mode
         modeselect game = new modeselect(); //refers to modeselect class
-        game.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        game.setSize(300,100);
-        game.setResizable(false);
-        game.setVisible(true);
+        game.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); //closes the window when X is pressed
+        game.setLocationRelativeTo(null); //window opens at the center
+        game.setSize(300,100); //window size
+        game.setResizable(false); //cannot resize
+        game.setVisible(true); //opens the window
         
     }
     
