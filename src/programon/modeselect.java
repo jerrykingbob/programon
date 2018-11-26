@@ -37,11 +37,11 @@ public class modeselect extends JFrame{ //Code for the mode selection window
     
     private class handler implements ActionListener{ //Subclass (class in a class)
         public void actionPerformed(ActionEvent event){ //what to do when either button is pressed
+            dispose();
             if(event.getSource()==single)
                 play.singleplayer();
             else if(event.getSource()==multi)
                 play.multiplayer();
-            dispose();
         }
     }
 }
