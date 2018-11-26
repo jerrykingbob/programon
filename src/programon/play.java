@@ -18,12 +18,12 @@ import javax.swing.JLabel;
  *
  * @author RotiCanai
  */
-public class play extends JFrame{
+public class play extends JFrame{ //Incomplete
     public static void singleplayer(){
-        //Singleplayer logic goes here
+        //Single player code goes here
     }
     
     public static void multiplayer(){
-        //multiplayer logic goes here
+        //multiplayer code goes here
     }
 }
