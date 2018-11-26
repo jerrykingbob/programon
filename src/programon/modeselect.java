@@ -15,12 +15,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
-import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 
-public class modeselect extends JFrame{
+public class modeselect extends JFrame{ //Code for the mode selection window
     private JLabel question;
     private JButton single;
     private JButton multi;
@@ -36,13 +33,13 @@ public class modeselect extends JFrame{
         add(single);
         add(multi);
         
-        handler action = new handler();
+        handler action = new handler(); //refers to the handler subclass
         single.addActionListener(action);
-        single.addActionListener(action);
+        multi.addActionListener(action);
     }
     
-    private class handler implements ActionListener{
-        public void actionPerformed(ActionEvent event){
+    private class handler implements ActionListener{ //Subclass (class in a class)
+        public void actionPerformed(ActionEvent event){ //what to do when either button is pressed
             String str ="";
             if(event.getSource()==single)
                 play.singleplayer();
