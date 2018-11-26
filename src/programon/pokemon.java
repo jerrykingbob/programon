@@ -14,16 +14,14 @@ public class pokemon { //Only a template. Can be edited to fit with the algoritm
     private String type;
     private int level;
     private int HP;
-    private String move1;
-    private String move2;
+    private static String[] moves;
 
-    public pokemon(String name, String type, int level, int HP, String move1, String move2) {
+    public pokemon(String name, String type, int level, int HP, String[] moves) {
         this.name = name;
         this.type = type;
         this.level = level;
         this.HP = HP;
-        this.move1 = move1;
-        this.move2 = move2;
+        this.moves = moves;
     }
 
     public String getName() {
@@ -42,12 +40,8 @@ public class pokemon { //Only a template. Can be edited to fit with the algoritm
         return HP;
     }
 
-    public String getMove1() {
-        return move1;
-    }
-
-    public String getMove2() {
-        return move2;
+    public static String[] getMoves() {
+        return moves;
     }
     
     
