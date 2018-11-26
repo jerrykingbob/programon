@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package programon;
 
 import java.awt.FlowLayout;
@@ -19,6 +14,10 @@ import javax.swing.JLabel;
  * @author RotiCanai
  */
 public class play extends JFrame{ //Incomplete
+    /**
+     * This class will be used to run the actual game.
+    */
+    
     public static void singleplayer(){
         //Single player code goes here
     }
